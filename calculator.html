@@ -5,65 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="stylecalculator.css">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to calculator calculates</h1>
-    <div id="container">
+    <header>
+    <img src="image/logo.png" alt="logo">
+    <h1>calculator.net</h1>
+    </header>
+    <section>
+
+        <p id="welcome">Welcome to calcualor.net. If you are looking for online calculator to do some
+           calculations online, then you have come to the right place.<br>
+           Head down to our calcular and do your calculations as fast as you wish.</p>
         
+        <div class="imgs">
+            <div class="img">
+             <img src="image/img1.jpg" id ="img1" alt="image 1">
+             </div>
+            <div class="img">
+             <img src="image/img2.jpg" id ="img2" alt="image 2">
+            </div>
+            <div class="img">
+             <img src="image/img3.jpg" id ="img3" alt="image 3">
+            </div>
+        </div>
+    </section>
+    <div id="container">
     
-    <!-- <div id="show">&nbsp (this is a placeholder)</div> -->
+    
+    
     <div id="calculator">
             <div id="result">
 
                 <div id="history">
-                    <!-- 8*9 is just a dummy text you can delete it -->
-                    <p id="history-value">8*9</p>
+                    
+                    <p id="history-value"></p>
                 </div>
                 <div id="output">
-                    <!-- 8888888 is also dummy text you can delete it -->
-                    <p id="output-value">888888</p>
+                    
+                    <p id="output-value" contentEditable="true"></p>
                 </div>
             </div>
             
             
         <div id="keyboard">
-            <!-- C is clear button -->
-            <button class="operator" id="clear">C</button>
-            <!-- CE is back space. -->
-            <button class="operator" id="backspace">CE</button>
+           
+            <button class="operator" id="clear" value="">C</button>
+            <button class="operator" id="backspace">&larr;</button>
             <button class="operator" id="%">%</button>
-            <button class="operator" id="/">&#247;</button>
+            <button class="operator" id="/" value="/">&#247;</button>
             
-            <button class="number" id="7">7</button>
-            <button class="number" id="8">8</button>
-            <button class="number" id="9">9</button>
-            <button class="operator" id="x">&times;</button>
+            <button class="number" id="7" value="7">7</button>
+            <button class="number" id="8" value="8">8</button>
+            <button class="number" id="9" value="9">9</button>
+            <button class="operator" id="x" value="*">&times;</button>
 
-            <button class="number" id="4">4</button>
-            <button class="number" id="5">5</button>
-            <button class="number" id="6">6</button>
-            <button class="operator" id="-">-</button>
+            <button class="number" id="4" value="4">4</button>
+            <button class="number" id="5" value="5">5</button>
+            <button class="number" id="6" value="6">6</button>
+            <button class="operator" id="-" value="-">-</button>
 
-            <button class="number" id="1">1</button>
-            <button class="number" id="2">2</button>
-            <button class="number" id="3">3</button>
-            <button class="operator" id="+">+</button>
+            <button class="number" id="1" value="1">1</button>
+            <button class="number" id="2" value="2">2</button>
+            <button class="number" id="3" value="3">3</button>
+            <button class="operator" id="+" value="+">+</button>
 
             <button class="empty" id="empty"></button>
-            <button class="number" id="0">0</button>
-            <button class="empty" id="empty"></button>
-            <button class="operator" id="=">=</button>
+            <button class="number" id="0" value="0">0</button>
+            <button class="empty" id="empty" value=""></button>
+            <button class="operator" id="=" value="">=</button>
             
         </div>
     </div>
 </div>
+<footer>
+    <div id="footer">
+         <p>&copy; 2021 . All Rights Reserved.</p>
+        
+    </div>
+</footer>
+<script src="app.js"></script>
 
-   <script src="calculator.js"></script>
-   <!-- <script>
-       function display(){
-           document.getElementById("show").innerHTML=value;
-       }
-   </script> -->
 </body>
 </html>
